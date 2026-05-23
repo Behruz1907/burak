@@ -1,25 +1,24 @@
 {
   "name": "burak",
   "version": "1.0.0",
-  "description": "This is burak project backend",
+  "description": "Burak Project Back-End",
   "main": "src/server.ts",
-  "type": "module",
   "scripts": {
-    "start": "tsx src/server.ts",
-    "start:dev": "nodemon --exec tsx-node src/server.ts",
+    "start": "ts-node src/server.ts",
+    "start:dev": "nodemon --exec ts-node src/server.ts",
     "build": "tsc",
+    "train": "nodemon --exec python train.py",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "\"MIT\"",
+  "author": "RYAN",
   "license": "ISC",
   "dependencies": {
-    "moment": "^2.29.4"
+    "moment": "^2.30.1"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2",
+    "@types/node": "^25.9.1",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.2.0",
-    "tsx": "^4.22.3",
     "typescript": "^5.2.2"
   }
 }
