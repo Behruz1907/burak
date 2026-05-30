@@ -1,3 +1,22 @@
+# TASK N
+
+# Stringni palindrom ekanligini aniqlab true yoki false qaytarsin.
+
+# Masalan: palindromCheck("dad") return true
+
+
+def palindromCheck(a):
+    if a == a[::-1]:
+        return True
+    else:
+        return False
+
+
+print(palindromCheck("dad"))
+
+
+#     return " ".join(new_words)
+
 # TASK M
 
 # Array ichidagi har bir raqam uchun raqamning o'zi va uning kvadratidan tashkil topgan object hosil qilib qaytarsin.
@@ -8,20 +27,20 @@
 # JAVOB:
 
 
-def getSquareNumbers(a):
-    result = []
+# def getSquareNumbers(a):
+#     result = []
 
-    for num in a:
-        obj = {
-            "numb": num,
-            "squr": num ** 2
-        }
-        result.append(obj)
+#     for num in a:
+#         obj = {
+#             "numb": num,
+#             "squr": num ** 2
+#         }
+#         result.append(obj)
 
-    return result
+#     return result
 
 
-print(getSquareNumbers([1, 2, 3]))
+# print(getSquareNumbers([1, 2, 3]))
 
 
 # TASK L
