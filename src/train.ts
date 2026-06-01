@@ -5,7 +5,7 @@ console.log("Hello World!")
 - Naming standarts:
  function, method, variable =>  CAMEL CASE            goHome
 class => PASCAL CASE                                  MemberService
- folder => KEBAB CASE
+ folder, file => KEBAB CASE
  css => SNAKE                                         button_style
 
 
