@@ -1,14 +1,3 @@
-def calculateSumOfNumbers(arr):
-    result = 0
-
-    for item in arr:
-        if type(item) in [int, float]:
-            result += item
-
-    return result
-
-
-print(calculateSumOfNumbers([10, "10", {"son": 10}, True, 35]))
 
 
 # TASK O
@@ -25,14 +14,14 @@ print(calculateSumOfNumbers([10, "10", {"son": 10}, True, 35]))
 # Masalan: palindromCheck("dad") return true
 
 
-def palindromCheck(a):
-    if a == a[::-1]:
-        return True
-    else:
-        return False
+# def palindromCheck(a):
+#     if a == a[::-1]:
+#         return True
+#     else:
+#         return False
 
 
-print(palindromCheck("dad"))
+# print(palindromCheck("dad"))
 
 
 #     return " ".join(new_words)
