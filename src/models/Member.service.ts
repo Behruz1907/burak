@@ -1,17 +1,14 @@
-import MemberModel from "../schema/Member.model";
-import { Member, MemberInput } from "../libs/types/member";
-
 import { MemberType } from "../libs/enums/member.enum";
 import Errors, { HttpCode, Message } from "../libs/Error";
-
+import { MemberInput, Member } from "../libs/types/member";
+import MemberModel from "../schema/Member.model";
 class MemberService {
   private readonly memberModel;
-
   constructor() {
     this.memberModel = MemberModel;
   }
 
-  public async processSignup(input: MemberInput): Promise<Member> {
+public async processSignup(input: MemberInput): Promise<Member> {
     const exist = await this.memberModel
       .findOne({ memberType: MemberType.RESTAURANT })
       .exec();
@@ -20,17 +17,62 @@ class MemberService {
 
     try {
       const result = await this.memberModel.create(input);
-      result.memberpassword = "";
+      result.memberPassword = "";
       return result;
-    } catch (err: any) {
+    } 
+    catch (err) {
       // Provide error details and a status code to Errors constructor
-      const message = err?.message || "Failed to process signup";
       throw new Errors(HttpCode.BAD_REQUEST, Message.CREATED_FAILED);
     }
   }
 }
 
-export default MemberService;
+export default MemberService; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   public async processSignup(input: MemberInput): Promise<Member> {
+//     console.log(3)
+//     const exist = await this.memberModel
+//       .findOne({ memberType: MemberType.RESTAURANT })
+//       .exec();
+//     console.log("exist:", exist);
+//     if (exist) throw new Errors(HttpCode.BAD_REQUEST, Message.CREATED_FAILED);
+//      console.log(4)
+//     try {
+//       const result = await this.memberModel.create(input);
+
+//       //  const tempResult = new this.memberModel(input);
+//       //  const result = await tempResult.save();
+
+//       result.memberPassword = "";
+//        console.log(5)
+//       return result;
+//     } catch (err) {
+//     console.log("MONGOOSE REAL ERROR:", err); // <--- Mana shu qatorni qo'shing
+//     throw new Errors(HttpCode.BAD_REQUEST, Message.CREATED_FAILED);
+// }
+//   }
+// }
+
+// export default MemberService;     
 
 
 
