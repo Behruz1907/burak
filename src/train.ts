@@ -13,3 +13,11 @@ class => PASCAL CASE                                  MemberService
 
 
 */
+
+
+/**
+ Traditional Api
+ Rest Api
+ GraphQl Api
+ ...
+ */

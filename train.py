@@ -1,3 +1,23 @@
+def calculateSumOfNumbers(arr):
+    result = 0
+
+    for item in arr:
+        if type(item) in [int, float]:
+            result += item
+
+    return result
+
+
+print(calculateSumOfNumbers([10, "10", {"son": 10}, True, 35]))
+
+
+# TASK O
+
+# Array ichidagi har xil qiymatlardan faqat sonlar yig'indisini hisoblab qaytarsin.
+
+# Masalan: calculateSumOfNumbers([10, "10", {son: 10}, true, 35]) return 45
+
+
 # TASK N
 
 # Stringni palindrom ekanligini aniqlab true yoki false qaytarsin.
