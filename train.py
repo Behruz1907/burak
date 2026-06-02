@@ -1,4 +1,14 @@
+def calculateSumOfNumbers(arr):
+    result = 0
 
+    for item in arr:
+        if type(item) in [int, float]:
+            result += item
+
+    return result
+
+
+print(calculateSumOfNumbers([10, "10", {"son": 10}, True, 35]))
 
 # TASK O
 
