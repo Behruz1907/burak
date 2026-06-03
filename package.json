@@ -14,7 +14,7 @@
   "author": "RYAN",
   "license": "ISC",
   "dependencies": {
-    "@types/morgan": "^1.9.10",
+   "bcryptjs": "^2.4.3",
     "dotenv": "^16.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.3",
@@ -24,6 +24,8 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+     "@types/morgan": "^1.9.10",
+    "@types/bcryptjs": "^2.4.6",
     "@types/express": "^4.17.3",
     "@types/node": "^25.9.1",
     "ts-node": "^10.9.1",
