@@ -1,14 +1,48 @@
-def calculateSumOfNumbers(arr):
-    result = 0
+# TASK P
 
-    for item in arr:
-        if type(item) in [int, float]:
-            result += item
+# Objectni nested array sifatida convert qilib qaytarsin.
 
-    return result
+# Masalan: objectToArray({a: 10, b: 20}) return [["a", 10], ["b", 20]]
+
+def objectToArray(obj):
+
+    array = []
+    for key, value in obj.items():
+        item = [key, value]
+        array.append(item)
+    return array
 
 
-print(calculateSumOfNumbers([10, "10", {"son": 10}, True, 35]))
+print(objectToArray({"a": 10, "b": 20}))
+
+
+# def objectToArray(array):
+#     obj = {
+#         "a": 10,
+#         "b": 20,
+#     }
+
+#     array = []
+#     for key, value in obj.items():
+#         item = [key, value]
+#         array.append(item)
+#     return array
+
+
+# print(objectToArray({"a": 10, "b": 20}))
+
+
+# def calculateSumOfNumbers(arr):
+#     result = 0
+
+#     for item in arr:
+#         if type(item) in [int, float]:
+#             result += item
+
+#     return result
+
+
+# print(calculateSumOfNumbers([10, "10", {"son": 10}, True, 35]))
 
 # TASK O
 
