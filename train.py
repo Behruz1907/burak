@@ -1,19 +1,37 @@
+# TASK Q
+
+# Objectda berilgan string propertysi borligini tekshirsin.
+
+# Masalan: hasProperty({name: "BMW"}, "name") return true
+
+
+def hasProperty(a, b):
+
+    if b in a:
+        return True
+
+    return False
+
+
+print(hasProperty({"name": "BMW"}, "name"))
+
+
 # TASK P
 
 # Objectni nested array sifatida convert qilib qaytarsin.
 
 # Masalan: objectToArray({a: 10, b: 20}) return [["a", 10], ["b", 20]]
 
-def objectToArray(obj):
+# def objectToArray(obj):
 
-    array = []
-    for key, value in obj.items():
-        item = [key, value]
-        array.append(item)
-    return array
+#     array = []
+#     for key, value in obj.items():
+#         item = [key, value]
+#         array.append(item)
+#     return array
 
 
-print(objectToArray({"a": 10, "b": 20}))
+# print(objectToArray({"a": 10, "b": 20}))
 
 
 # def objectToArray(array):
