@@ -21,3 +21,9 @@ class => PASCAL CASE                                  MemberService
  GraphQl Api
  ...
  */
+
+
+ /**
+  Traditional FD => BSSR (Admin) => EJS
+  Modern FD => SPA (User's application) => REACT library
+  */

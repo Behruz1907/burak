@@ -19,6 +19,7 @@ app.use(morgan(MORGAN_FORMAT));
 app.set('views', path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 /** 4-ROUTERS **/     
-app.use('/admin', routerAdmin);  // SPA: React 1- burak bssr di react loyihamizga rest api server sifatida ishlatamiz
+app.use('/admin', routerAdmin); // SSR
+app.use("/", router) //REACT    // SPA: React 1- burak bssr di react loyihamizga rest api server sifatida ishlatamiz
     // SSR: EJS  2- adminka loyihamizdi qurish maqsadida ham ishlatamiz!
 export default app;  // 
