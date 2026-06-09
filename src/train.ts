@@ -27,3 +27,8 @@ class => PASCAL CASE                                  MemberService
   Traditional FD => BSSR (Admin) => EJS
   Modern FD => SPA (User's application) => REACT library
   */
+
+  /**
+   * request join
+     self destroy 
+   */
