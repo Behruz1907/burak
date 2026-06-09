@@ -3,13 +3,33 @@
 # "1 + 2" ko'rinishidagi stringni hisoblab number qaytarsin.
 
 # Masalan: calculate("1 + 3") return 4
-def calculate(a):
+# def calculate(a):
 
-    str = a.split()
-    print(str)
+#     str = a.split()
+#     print(str)
+
+
+# print(calculate("1 + 3"))
+
+
+def calculate(strnumb):
+    a, b, c = strnumb.split()
+
+    a = int(a)
+    c = int(c)
+
+    if b == "+":
+        return a + c
+    elif b == "-":
+        return a - c
+    elif b == "*":
+        return a * c
+    elif b == "/":
+        return a / c
 
 
 print(calculate("1 + 3"))
+
 
 # TASK Q
 
