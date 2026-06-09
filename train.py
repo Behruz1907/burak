@@ -1,3 +1,16 @@
+# TASK R
+
+# "1 + 2" ko'rinishidagi stringni hisoblab number qaytarsin.
+
+# Masalan: calculate("1 + 3") return 4
+def calculate(a):
+
+    str = a.split()
+    print(str)
+
+
+print(calculate("1 + 3"))
+
 # TASK Q
 
 # Objectda berilgan string propertysi borligini tekshirsin.
@@ -5,15 +18,15 @@
 # Masalan: hasProperty({name: "BMW"}, "name") return true
 
 
-def hasProperty(a, b):
+# def hasProperty(a, b):
 
-    if b in a:
-        return True
+#     if b in a:
+#         return True
 
-    return False
+#     return False
 
 
-print(hasProperty({"name": "BMW"}, "name"))
+# print(hasProperty({"name": "BMW"}, "name"))
 
 
 # TASK P
