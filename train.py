@@ -1,3 +1,22 @@
+
+# TASK S
+
+# Array ichidagi tushib qolgan sonni topib qaytarsin.
+
+# Masalan: missingNumber([3, 0, 1]) return 2
+
+
+def missNumb(numbs):
+    a = len(numbs)
+
+    for b in range(a + 1):
+        if b not in numbs:
+            return b
+
+
+print(missNumb([3, 0, 1]))
+
+
 # TASK R
 
 # "1 + 2" ko'rinishidagi stringni hisoblab number qaytarsin.
@@ -12,23 +31,23 @@
 # print(calculate("1 + 3"))
 
 
-def calculate(strnumb):
-    a, b, c = strnumb.split()
+# def calculate(strnumb):
+#     a, b, c = strnumb.split()
 
-    a = int(a)
-    c = int(c)
+#     a = int(a)
+#     c = int(c)
 
-    if b == "+":
-        return a + c
-    elif b == "-":
-        return a - c
-    elif b == "*":
-        return a * c
-    elif b == "/":
-        return a / c
+#     if b == "+":
+#         return a + c
+#     elif b == "-":
+#         return a - c
+#     elif b == "*":
+#         return a * c
+#     elif b == "/":
+#         return a / c
 
 
-print(calculate("1 + 3"))
+# print(calculate("1 + 3"))
 
 
 # TASK Q
