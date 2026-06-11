@@ -15,7 +15,7 @@ class => PASCAL CASE                                  MemberService
 */
 
 
-/**
+/** Request:
  Traditional Api
  Rest Api
  GraphQl Api
@@ -23,12 +23,19 @@ class => PASCAL CASE                                  MemberService
  */
 
 
- /**
+ /**Frontend Development:
   Traditional FD => BSSR (Admin) => EJS
   Modern FD => SPA (User's application) => REACT library
   */
 
-  /**
+  /** Cookies:
    * request join
      self destroy 
    */
+
+     /**Validation:
+      * Fronted validation
+      * Backend validation
+      * Database validation
+      
+      */
