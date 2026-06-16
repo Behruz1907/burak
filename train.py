@@ -1,3 +1,21 @@
+# npm run train!!!!!
+
+# TASK T
+
+# Ikkita arrayni qabul qilib, ularni birlashtirib tartiblangan holda qaytarsin.
+
+# Masalan: mergeSortedArrays([0, 3, 4], [4, 6]) return [0, 3, 4, 4, 6]
+
+
+def mergeSortedArrays(a, b):
+
+    arr = a + b
+    arr.sort()
+    return arr
+
+
+print(mergeSortedArrays([0, 3, 4], [4, 6]))
+
 
 # TASK S
 
@@ -6,15 +24,15 @@
 # Masalan: missingNumber([3, 0, 1]) return 2
 
 
-def missNumb(numbs):
-    a = len(numbs)
+# def missNumb(numbs):
+#     a = len(numbs)
 
-    for b in range(a + 1):
-        if b not in numbs:
-            return b
+#     for b in range(a + 1):
+#         if b not in numbs:
+#             return b
 
 
-print(missNumb([3, 0, 1]))
+# print(missNumb([3, 0, 1]))
 
 
 # TASK R
