@@ -4,6 +4,13 @@
     <div>
     <div>PRODUCTS PAGE</div>
     <div><%=member.memberNick%></div>
+
+    <% products.map((value, key) => { %> 
+    <p><%= value.productName %> - <%= value.productSize %></p>
+        <% }) %>
     </div>
 </body>
 <%- include('includes/footer') %>
+
+// biz ejs ga 2 xil korinishda malumotlarni yuborishimiz mumkun 1 res.renderning 2 chi argumentidan 
+//foydalangan xolda 2 - middlewarelar orqali only global malumotlani
