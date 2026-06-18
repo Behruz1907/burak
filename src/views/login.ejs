@@ -1,37 +1,45 @@
 <%- include('includes/header') %>
 
+<link rel="stylesheet" type="text/css" href="/css/login.css" />
 
 <body>
-   <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>John</td>
-      <td>Doe</td>
-      <td>@social</td>
-    </tr>
-  </tbody>
-</table>
+  <form class="login-container" action="/admin/login" METHOD="POST">
+    <div class="login-frame">
+      <div class="login-top">
+        <span>Enter</span>
+        <div>Go back <a href="/admin" style="color: #6440fb">Home</a></div>
+        <p>
+          Not registered yet?
+          <a href="/admin/signup" style="color: #6440fb">Signup</a>
+        </p>
+      </div>
+      <div class="login-input-frame">
+        <div class="login-input-container">
+          <label>Restaurant *</label>
+          <input
+            type="text"
+            name="memberNick"
+            class="member-nick"
+            placeholder="Username"
+            value=""
+            required
+          />
+        </div>
+        <div class="login-input-container">
+          <label>Password *</label>
+          <input
+            type="password"
+            name="memberPassword"
+            class="member-password"
+            placeholder="Password"
+            value=""
+            required
+          />
+        </div>
+      </div>
+      <button class="login-btn btn" name="login" type="submit">Login</button>
+    </div>
+  </form>
 </body>
 
 <%- include('includes/footer') %>
