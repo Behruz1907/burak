@@ -1,5 +1,21 @@
 # npm run train!!!!!
+# TASK V
 
+# Stringdagi har bir harf necha marta takrorlanganini object sifatida qaytarsin.
+
+# Masalan: countChars("hello") return {h: 1, e: 1, l: 2, o: 1}
+
+def countChars(a):
+    result = {}
+    for chars in a:
+        if chars in result:
+            result[chars] = result[chars] + 1
+        else:
+            result[chars] = 1
+    return result
+
+
+print(countChars("hello"))
 # TASK T
 
 # Ikkita arrayni qabul qilib, ularni birlashtirib tartiblangan holda qaytarsin.
@@ -7,14 +23,14 @@
 # Masalan: mergeSortedArrays([0, 3, 4], [4, 6]) return [0, 3, 4, 4, 6]
 
 
-def mergeSortedArrays(a, b):
+# def mergeSortedArrays(a, b):
 
-    arr = a + b
-    arr.sort()
-    return arr
+#     arr = a + b
+#     arr.sort()
+#     return arr
 
 
-print(mergeSortedArrays([0, 3, 4], [4, 6]))
+# print(mergeSortedArrays([0, 3, 4], [4, 6]))
 
 
 # TASK S
