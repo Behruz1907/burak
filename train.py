@@ -1,21 +1,40 @@
 # npm run train!!!!!
+
+# TASK W
+
+# Arrayni berilgan uzunlikda bo'laklarga ajratib qaytarsin.
+
+# Masalan: chunkArray([1, 2, 3, 4, 5], 2) return [[1, 2], [3, 4], [5]]
+
+def chunkArray(a, size):
+    result = []
+    for chunk in range(0, len(a), size):
+
+        result.append(a[chunk:chunk+size])
+
+    return result
+
+
+print(chunkArray([1, 2, 3, 4, 5], 2))
+
+
 # TASK V
 
 # Stringdagi har bir harf necha marta takrorlanganini object sifatida qaytarsin.
 
 # Masalan: countChars("hello") return {h: 1, e: 1, l: 2, o: 1}
 
-def countChars(a):
-    result = {}
-    for chars in a:
-        if chars in result:
-            result[chars] = result[chars] + 1
-        else:
-            result[chars] = 1
-    return result
+# def countChars(a):
+#     result = {}
+#     for chars in a:
+#         if chars in result:
+#             result[chars] = result[chars] + 1
+#         else:
+#             result[chars] = 1
+#     return result
 
 
-print(countChars("hello"))
+# print(countChars("hello"))
 # TASK T
 
 # Ikkita arrayni qabul qilib, ularni birlashtirib tartiblangan holda qaytarsin.
