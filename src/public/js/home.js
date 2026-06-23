@@ -6,11 +6,11 @@ function fitElementToParent(el, padding) {
   function resize() {
     if (timeout) clearTimeout(timeout);
     anime.set(el, { scale: 1 });
-    let pad = padding || 0;
-    let parentEl = el.parentNode;
-    let elOffsetWidth = el.offsetWidth - pad;
-    let parentOffsetWidth = parentEl.offsetWidth;
-    let ratio = parentOffsetWidth / elOffsetWidth;
+    let pad = padding || 0,
+      parentEl = el.parentNode,
+      elOffsetWidth = el.offsetWidth - pad,
+      parentOffsetWidth = parentEl.offsetWidth,
+      ratio = parentOffsetWidth / elOffsetWidth;
     timeout = setTimeout(anime.set(el, { scale: ratio }), 10);
   }
 
@@ -19,10 +19,10 @@ function fitElementToParent(el, padding) {
 }
 
 (function () {
-  const sphereEl = document.querySelector(".sphere-animation");
-  const spherePathEls = sphereEl.querySelectorAll(".sphere path");
-  const pathLength = spherePathEls.length;
-  const animations = [];
+  const sphereEl = document.querySelector(".sphere-animation"),
+    spherePathEls = sphereEl.querySelectorAll(".sphere path"),
+    pathLength = spherePathEls.length,
+    animations = [];
 
   fitElementToParent(sphereEl);
 
@@ -40,7 +40,7 @@ function fitElementToParent(el, padding) {
             translateY: [2, -4],
             easing: "easeOutQuad",
             autoplay: false,
-          })
+          }),
         );
       }
     },
@@ -71,7 +71,7 @@ function fitElementToParent(el, padding) {
         delay: anime.stagger(60, { direction: "reverse" }),
         easing: "linear",
       },
-      0
+      0,
     );
 
   const shadowAnimation = anime(
@@ -85,7 +85,7 @@ function fitElementToParent(el, padding) {
       easing: "easeOutQuint",
       autoplay: false,
     },
-    0
+    0,
   );
 
   function init() {
