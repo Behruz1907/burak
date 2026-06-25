@@ -1,21 +1,45 @@
 # npm run train!!!!!
 
+# TASK X
+
+# Object tarkibida(nested bo'lsa ham) berilgan kalit necha marta takrorlanganini sanang.
+
+# Masalan: countOccurrences({model: "A", s: {model: "B"}}, "model") return 2
+
+
+def countOccurrences(obj, key):
+    count = 0
+
+    for k, v in obj.items():
+
+        if k == key:
+            count += 1
+
+        if isinstance(v, dict):
+            count += countOccurrences(v, key)
+
+    return count
+
+
+print(countOccurrences({"model": "A", "s": {"model": "B"}}, "model"))
+
+
 # TASK W
 
 # Arrayni berilgan uzunlikda bo'laklarga ajratib qaytarsin.
 
 # Masalan: chunkArray([1, 2, 3, 4, 5], 2) return [[1, 2], [3, 4], [5]]
 
-def chunkArray(a, size):
-    result = []
-    for chunk in range(0, len(a), size):
+# def chunkArray(a, size):
+#     result = []
+#     for chunk in range(0, len(a), size):
 
-        result.append(a[chunk:chunk+size])
+#         result.append(a[chunk:chunk+size])
 
-    return result
+#     return result
 
 
-print(chunkArray([1, 2, 3, 4, 5], 2))
+# print(chunkArray([1, 2, 3, 4, 5], 2))
 
 
 # TASK V
