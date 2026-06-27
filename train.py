@@ -1,4 +1,16 @@
 # npm run train!!!!!
+# TASK Y
+
+# Ikkala arrayda ham ishtirok etgan bir xil qiymatlarni qaytarsin.
+
+# Masalan: findIntersection([1, 2, 3], [3, 2, 0]) return [2, 3]
+
+def find_intersection(arr1, arr2):
+    return list(set(arr1) & set(arr2))
+
+
+print(find_intersection([1, 2, 3], [3, 2, 0]))
+
 
 # TASK X
 
@@ -7,21 +19,21 @@
 # Masalan: countOccurrences({model: "A", s: {model: "B"}}, "model") return 2
 
 
-def countOccurrences(obj, key):
-    count = 0
+# def countOccurrences(obj, key):
+#     count = 0
 
-    for k, v in obj.items():
+#     for k, v in obj.items():
 
-        if k == key:
-            count += 1
+#         if k == key:
+#             count += 1
 
-        if isinstance(v, dict):
-            count += countOccurrences(v, key)
+#         if isinstance(v, dict):
+#             count += countOccurrences(v, key)
 
-    return count
+#     return count
 
 
-print(countOccurrences({"model": "A", "s": {"model": "B"}}, "model"))
+# print(countOccurrences({"model": "A", "s": {"model": "B"}}, "model"))
 
 
 # TASK W
