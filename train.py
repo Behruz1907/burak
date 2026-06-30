@@ -1,15 +1,34 @@
 # npm run train!!!!!
+
+# TASK Z
+
+# Array tarkibidagi juft sonlar yig'indisini hisoblab qaytarsin.
+
+# Masalan: sumEvens([1, 2, 3]) return 2
+
+
+def sumevens(a):
+    total = 0
+    for numb in a:
+        if numb % 2 == 0:
+            total += numb
+    return total
+
+
+print(sumevens([1, 2, 3]))
+
+
 # TASK Y
 
 # Ikkala arrayda ham ishtirok etgan bir xil qiymatlarni qaytarsin.
 
 # Masalan: findIntersection([1, 2, 3], [3, 2, 0]) return [2, 3]
 
-def find_intersection(arr1, arr2):
-    return list(set(arr1) & set(arr2))
+# def find_intersection(arr1, arr2):
+#     return list(set(arr1) & set(arr2))
 
 
-print(find_intersection([1, 2, 3], [3, 2, 0]))
+# print(find_intersection([1, 2, 3], [3, 2, 0]))
 
 
 # TASK X
