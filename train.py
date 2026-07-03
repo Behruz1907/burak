@@ -7,15 +7,15 @@
 # Masalan: sumEvens([1, 2, 3]) return 2
 
 
-def sumevens(a):
-    total = 0
-    for numb in a:
-        if numb % 2 == 0:
-            total += numb
-    return total
+# def sumevens(a):
+#     total = 0
+#     for numb in a:
+#         if numb % 2 == 0:
+#             total += numb
+#     return total
 
 
-print(sumevens([1, 2, 3]))
+# print(sumevens([1, 2, 3]))
 
 
 # TASK Y
