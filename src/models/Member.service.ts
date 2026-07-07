@@ -96,6 +96,15 @@ class MemberService {
   }
 
   /*SSR */
+  public async getRestaurant(): Promise<Member> {
+    const result = await this.memberModel
+      .findOne({ memberType: MemberType.RESTAURANT })
+      .lean()
+      .exec();
+
+    if (!result) throw new Errors(HttpCode.NOT_FOUND, Message.NO_DATA_FOUND);
+    return result;
+  }
 
   public async processSignup(input: MemberInput): Promise<Member> {
     const exist = await this.memberModel
@@ -109,12 +118,10 @@ class MemberService {
     input.memberPassword = await bcrypt.hash(input.memberPassword, salt);
     console.log("after:", input.memberPassword);
 
-    console.log(4);
-
     try {
       const result = await this.memberModel.create(input);
       result.memberPassword = "";
-      console.log(5);
+
       return result;
     } catch (err) {
       // Provide error details and a status code to Errors constructor
