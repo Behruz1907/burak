@@ -83,6 +83,7 @@ class OrderService {
         { $match: matches },
         { $sort: { updatedAt: -1 } },
         { $skip: (inquiry.page - 1) * inquiry.limit },
+        { $limit: inquiry.limit },
 
         {
           $lookup: {
