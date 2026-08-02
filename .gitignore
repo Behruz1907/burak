@@ -4,4 +4,4 @@ dist
    
 .env
 
-uploads
+uploads.env
